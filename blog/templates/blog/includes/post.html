@@ -1,0 +1,16 @@
+{% load static %}
+<li>
+	<article class="post">
+		<a href="{% url 'blog-post-details' slug='mountains' %}">
+			<img src="{% static 'blog/images/mountains.jpg' %}" alt="post">
+			<div class="post__content">
+				<h3>
+					Post Title
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.
+				</p>
+			</div>
+		</a>
+	</article>
+</li>

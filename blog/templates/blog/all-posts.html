@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Django Blog|All Posts {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
+<link rel="stylesheet" href="{% static 'blog/post.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+<section id="all-posts">
+	<h2>My Collected Posts</h2>
+	<ul>
+		{% include 'blog/includes/post.html' %}
+		{% include 'blog/includes/post.html' %}
+		{% include 'blog/includes/post.html' %}
+		{% include 'blog/includes/post.html' %}
+		{% include 'blog/includes/post.html' %}
+	</ul>
+
+</section>
+
+{% endblock content %}
