@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %} Post Title {% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'blog/post-details.css' %}">
+{% endblock css %}
+
+{% block content %}
+<section id="summary">
+	<h2>
+		post title
+	</h2>
+	<article>
+		<img src="{% static 'blog/images/mountains.jpg' %}" alt="post">
+		<address>
+			<p>post author</p>
+		</address>
+		<div>
+			Last updated: <time>April 19th</time>
+		</div>
+	</article>
+</section>
+
+<main>
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ut molestiae ipsam eius illo veniam assumenda nihil totam unde a sequi necessitatibus rerum illum ex, quidem, atque optio enim? Nostrum!
+	</p>
+</main>
+
+{% endblock content %}
