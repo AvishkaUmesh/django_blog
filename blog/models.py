@@ -16,8 +16,11 @@ class Author(models.Model):
     last_name = models.CharField(max_length=100)
     email_address = models.EmailField()
 
-    def __str__(self):
+    def full_name(self):
         return f"{self.first_name} {self.last_name}"
+
+    def __str__(self):
+        return self.full_name()
 
 
 class Post(models.Model):
@@ -31,6 +34,3 @@ class Post(models.Model):
         Author, on_delete=models.SET_NULL, null=True, related_name="posts"
     )
     tags = models.ManyToManyField(Tag)
-
-    def __str__(self):
-        return self.title
