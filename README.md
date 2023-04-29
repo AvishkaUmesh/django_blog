@@ -1,6 +1,6 @@
 # Django Blog
 
-This is a Django-powered blog project that demonstrates how to build a blog application from scratch. The project includes features such as creating blog posts, managing user authentication, and displaying comments. It also utilizes Django's built-in admin panel to manage the blog's content.
+This is a Django-powered blog project that demonstrates how to build a blog application from scratch. The project includes features such as creating blog posts with authors and tags, displaying comments and read later option for posts. It also utilizes Django's built-in admin panel to manage the blog's content.
 
 ## Features
 
