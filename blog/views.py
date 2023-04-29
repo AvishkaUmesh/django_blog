@@ -119,4 +119,5 @@ class ReadLaterView(View):
             stored_posts.remove(post_id)
             request.session["stored_posts"] = stored_posts
 
-        return HttpResponseRedirect("/")
+        # return to request came url
+        return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
