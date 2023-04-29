@@ -19,22 +19,28 @@ To get started with the project, follow these steps:
    git clone https://github.com/AvishkaUmesh/django_blog.git
    ```
 
-2. Run database migrations:
+2. Install the project dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run database migrations:
 
    ```
    python manage.py migrate
    ```
 
-3. Create a superuser account for accessing the admin panel:
+4. Create a superuser account for accessing the admin panel:
 
    ```
    python manage.py createsuperuser
    ```
 
-4. Run the development server:
+5. Run the development server:
 
    ```
    python manage.py runserver
    ```
 
-5. Access the blog at <http://localhost:8000/> and the admin panel at <http://localhost:8000/admin/>.
+6. Access the blog at <http://localhost:8000/> and the admin panel at <http://localhost:8000/admin/>.
